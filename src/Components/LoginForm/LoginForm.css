@@ -1,0 +1,191 @@
+/*************** Grid Container********************/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  .wrapper {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+  }
+
+.row{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+  grid-auto-columns: minmax(auto, 1fr);
+  align-items: center;
+  grid-template-areas: "col1 col2"
+}
+.Left__container{
+  padding: 50px 15px;
+  grid-area: col1;
+  background-color: #002276;
+
+}
+.right__container{
+    
+  
+   margin-top: 20px;
+    padding: 0 20px;
+    height: 100%;
+    width: 100%;
+    grid-area: col2;
+    
+    
+}
+.title{
+    position: relative;
+    right: 20px;
+}
+.title_containter{
+    color: #3B3A6B;
+    font-size: 20px;
+    position:relative;
+    text-align: center;
+    
+}
+.logo{
+    height: 80px;
+    size: 50px;
+    text-align: center;
+    position: relative;
+    right: 20px;
+}
+/*********************Social Button Container*****************************/
+.social__btn__Container{
+    display: flex;
+    flex-direction: column;
+}
+
+.googlebtn{
+    color:white;
+    background-color: #2d84fc;
+    border: #2d84fc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 21px;
+    padding: 5px 20px;
+    border: 0;
+    
+    border-radius: px;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+     min-width:15em;
+     margin-bottom: 14px;
+    
+}
+.githubbtn{
+    color:white;
+    background-color:#333333;
+    border: #333333;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 21px;
+    padding: 5px 20px;
+    border: 0;
+
+    border-radius: px;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+     min-width:15em;
+     margin-bottom: 14px;
+}
+.microsoftbtn{
+    color:black;
+    background-color:white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 21px;
+    padding: 5px 20px;
+    border-radius: px;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+     min-width:15em;
+     margin-bottom: 14px;
+}
+.btn__logo{
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    z-index: 1;
+    float: left;
+}
+.googlebtn:hover {
+    background-color: RoyalBlue;
+  }
+  .githubbtn:hover {
+    background-color: black;
+  }
+  .microsoftbtn:hover {
+    background-color: whitesmoke;
+  }
+  .btn__link{
+    float:right; 
+    position:relative;
+    right:100px;
+    
+  }
+
+  .btn__link__microsoft{
+    float:right; 
+    position:relative;
+    right:90px;
+  }
+
+
+
+  /*****************************or Seprator*******************/
+  .separator {
+    width: 90%;
+    border-bottom: solid 1px;
+    position: relative;
+    margin: 5px 0px;
+}
+
+.separator::before {
+    content: "OR";
+    position: absolute;
+    left: 40%;
+    top: -10px;
+    background-color: #fff;
+    padding: 0px 5px;
+}
+
+/***********************Input************************/
+.imput__container{
+    display: flex;
+    flex-direction: column;
+}
+.inputField{
+    width:auto;
+
+}
+  /*************** Media Screen******************/
+  @media screen and (max-width:768px) {
+    .grid__container {
+     padding: 100px 0;
+    }
+    .row{
+        grid-template-areas:  "col2" "col1";
+    }
+    
+  }
+  @media screen and (max-width:480px) {
+    .grid__container {
+        padding: 100px 0;
+        overflow-x: hidden;
+    }
+    .right__container{
+        margin-left: -20%;
+    }
+    .Left__container{
+        margin-left: 0;
+    }
+    
+  }
+  

@@ -1,0 +1,25 @@
+.trustedComapny__text{
+    color: #cccccc;
+}
+.trustedCompany__logoCotainer{
+    display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+}
+.trustedCompany__logo{
+ width: 20x;
+ height: 20px;
+}
+.asana{
+    filter: grayscale(100%);
+}
+.houseparty{
+    filter: grayscale(200%);
+}
+@media screen and (max-width:768px) {
+    .trustedCompany__logoCotainer{
+        gap: 1px;
+    }
+    
+  }

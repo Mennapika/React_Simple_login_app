@@ -1,0 +1,115 @@
+.base-container{
+    width: 100%;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.form{
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form__group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+  
+}
+label{
+    font-size: 20px;
+}
+
+input{
+    margin-top: 6px;
+    min-width:18em;
+    height: 37px;
+    padding: 0px 10px;
+    font-size: 16px;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: all 250ms ease-in-out;
+    background-color: white;
+    border: 0.5px solid #cccccc;
+}
+input:focus{
+    outline: none;
+    box-shadow: 0px 0px 12px 0.8px #cccccc;
+}
+
+.btn__wrapper{
+ margin-top: 0.5em;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+
+}
+.btn{
+    font-size: 21px;
+    padding: 5px 20px;
+    border: 0;
+    background-color:#cccccc;
+    color: white;
+    border-radius:4px;
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+     min-width:15em;
+}
+.btn:hover{
+    background-color: black;
+}
+.btn:focus{
+    outline: none;
+}
+.forget__password{
+    font-size: 12px;
+    font-weight: bold;
+    color: #cccccc;
+   position: relative;
+   right:-120px;
+    cursor: pointer;
+}
+.forget__password:hover{
+    color: gray;
+}
+.signup__wrapper{
+display: flex;
+flex-direction: row;
+
+}
+.signupScreen__gray{
+    color: gray;
+    text-align: left;
+    font-size: 12px;
+}
+.signupScreen__link{
+    color: #2d84fc;
+    font-size: 12px;
+}
+.signupScreen__link:hover{
+cursor: pointer;
+text-decoration: underline;
+}
+.ssologin__link{
+    color: #2d84fc;
+    text-align: right;
+    font-size: 12px;
+    position: relative;
+    right: -50px;
+}
+.ssologin__link:hover{
+    cursor: pointer;
+text-decoration: underline;
+}
+.invalid{
+    color: red;
+    position: relative;
+    font-size: 12px;
+    font-weight: bold;
+}
